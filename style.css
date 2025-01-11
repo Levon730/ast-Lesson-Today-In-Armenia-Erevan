@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.exersice {
+    font-size: 50px;
+    color: rgb(65, 170, 135);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.exersice3 {
+    margin-top: 150px;
+}
+
+.text {
+    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.text::first-line {
+    background-color: black;
+    color: white;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+ul {
+    position: absolute;
+}
+
+.list1 {
+    left: 45%;
+}
+
+.list2 {
+    list-style: decimal;
+    left: 55%;
+}
+
+.list-style1 {
+    transition: .5s;
+}
+
+.list-style2 {
+    transition: .5s;
+}
+
+.list-style1:hover {
+    list-style: lower-greek;
+    padding-left: 20px;
+}
+
+.list-style1:hover::marker {
+    color: brown;
+}
+
+.list-style2:hover {
+    list-style: armenian;
+    padding-left: 20px;
+}
+
+.list-style2:hover::marker {
+    color: brown;
+}
+
+.flag {
+    width: 270px;
+    height: 180px;
+    outline: 1px solid black;
+}
+
+.arm {
+    background-image: linear-gradient(red 0 33%, blue 33% 67%, orange 33%);
+}
+
+.fr {
+    background-image: linear-gradient(to right, blue 0 33%, white 33% 67%, red 67% 100%);
+}
+
+.jp {
+    background-image: radial-gradient(red 0 30%, rgb(1, 66, 1) 30%);
+}
+
+.flag-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.animation-bg {
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(pink, white, rgb(121, 121, 255));
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.running {
+    width: 30px;
+    height: 30px;
+    outline: 1px solid black;
+    position: absolute;
+    border-radius: 5px;
+
+}
+
+.running1 {
+    left: 45%;
+    top: 40%;
+    animation: run1 3s linear infinite;
+}
+
+.running2 {
+    left: 55%;
+    top: 40%;
+    animation: run2 3s linear infinite;
+}
+
+.running3 {
+    left: 52%;
+    top: 60%;
+    animation: run3 3s linear infinite;
+}
+
+.running4 {
+    left: 48%;
+    top: 60%;
+    animation: run4 3s linear infinite;
+}
+
+
+@keyframes run1 {
+    0% {
+        left: 45%;
+        top: 40%;
+        background-color: orange;
+    }
+
+    25% {
+        left: 55%;
+        top: 40%;
+        background-color: green;
+    }
+
+    50% {
+        left: 52%;
+        top: 60%;
+        background-color: blue;
+    }
+
+    75% {
+        left: 48%;
+        top: 60%;
+        background-color: purple;
+    }
+
+    100% {
+        left: 45%;
+        top: 40%;
+    }
+}
+
+@keyframes run2 {
+    0% {
+        left: 55%;
+        top: 40%;
+        background-color: green;
+    }
+    
+    25% {
+        left: 52%;
+        top: 60%;
+        background-color: blue;
+    }
+    
+    50% {
+        left: 48%;
+        top: 60%;
+        background-color: purple;
+    }
+    
+    75% {
+        left: 45%;
+        top: 40%;
+        background-color: orange;
+    }
+    
+    100% {
+        left: 55%;
+        top: 40%;
+        background-color: green;
+    }
+}
+
+@keyframes run3 {
+    0% {
+        left: 52%;
+        top: 60%;
+        background-color: blue;
+    }
+    
+    25% {
+        left: 48%;
+        top: 60%;
+        background-color: purple;
+    }
+    
+    50% {
+        left: 45%;
+        top: 40%;
+        background-color: orange;
+    }
+    
+    75% {
+        left: 55%;
+        top: 40%;
+        background-color: green;
+    }
+    
+    100% {
+        left: 52%;
+        top: 60%;
+        background-color: blue;
+    }
+}
+
+@keyframes run4 {
+    0% {
+        left: 48%;
+        top: 60%;
+        background-color: purple;
+    }
+    
+    25% {
+        left: 45%;
+        top: 40%;
+        background-color: orange;
+    }
+    
+    50% {
+        left: 55%;
+        top: 40%;
+        background-color: green;
+    }
+    
+    75% {
+        left: 52%;
+        top: 60%;
+        background-color: blue;
+    }
+    
+    100% {
+        left: 48%;
+        top: 60%;
+        background-color: purple;
+    }
+}
